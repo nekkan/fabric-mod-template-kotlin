@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "authors": [
+    "nekkan"
+  ],
+  "id": "examplemod",
+  "version": "$version",
+  "name": "Example Mod",
+  "description": "yes",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "br.com.nekkan.examplemod.ExampleModBootstrap::init"
+      }
+    ]
+  },
+  "depends": {
+    "fabric-language-kotlin": ">=1.4.30"
+  }
+}
