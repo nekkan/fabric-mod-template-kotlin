@@ -1,4 +1,5 @@
 plugins {
+    id("fabric-loom") version "0.6-SNAPSHOT"
     kotlin("jvm") version "1.4.30"
     kotlin("kapt") version "1.4.30"
 }
