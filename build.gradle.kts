@@ -29,6 +29,13 @@ dependencies {
     kapt("net.fabricmc:sponge-mixin:$mixin_version")
 }
 
+tasks.processResources {
+    inputs.property("version", project.version)
+    filesMatching("fabric.mod.json") {
+        expand("version" to project.version)
+    }
+}
+
 tasks.compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
