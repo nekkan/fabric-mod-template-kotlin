@@ -17,5 +17,8 @@
   },
   "depends": {
     "fabric-language-kotlin": ">=1.4.30"
-  }
+  },
+  "mixins": [
+    "examplemod.mixins.json"
+  ]
 }
