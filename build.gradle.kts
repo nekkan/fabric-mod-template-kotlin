@@ -1,8 +1,12 @@
 plugins {
     kotlin("jvm") version "1.4.30"
+    kotlin("kapt") version "1.4.30"
 }
 
 repositories {
+    maven(url = "https://maven.fabricmc.net/") {
+        name = "Fabric"
+    }
     mavenCentral()
 }
 
