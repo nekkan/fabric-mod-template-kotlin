@@ -4,11 +4,17 @@ plugins {
     kotlin("kapt") version "1.4.30"
 }
 
+val mixin_version: String by project
+
 repositories {
     maven(url = "https://maven.fabricmc.net/") {
         name = "Fabric"
     }
     mavenCentral()
+}
+
+dependencies {
+    kapt("net.fabricmc:sponge-mixin:$mixin_version")
 }
 
 tasks.compileKotlin {
