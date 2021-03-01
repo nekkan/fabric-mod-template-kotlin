@@ -26,6 +26,7 @@ dependencies {
     mappings("net.fabricmc:yarn:$yarn_mappings:v2")
     modImplementation("net.fabricmc:fabric-loader:$loader_version")
     modImplementation("net.fabricmc.fabric-api:fabric-api:$fabric_version")
+    modImplementation("net.fabricmc:fabric-language-kotlin:1.4.30+build.2")
     kapt("net.fabricmc:sponge-mixin:$mixin_version")
 }
 
